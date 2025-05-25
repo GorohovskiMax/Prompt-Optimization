@@ -30,3 +30,32 @@ By varying the language, structure, and depth of the prompts, we observe how the
 
 ## 📁 Project Structure
 
+prompt-gradient-descent-mini/
+├── README.md <- This file
+├── prompts/ <- The 3 prompts used (child, student, engineer)
+│ ├── child.txt
+│ ├── student.txt
+│ └── engineer.txt
+├── responses/ <- The generated responses from the model
+│ ├── child.md
+│ ├── student.md
+│ └── engineer.md
+└── evaluation.md <- Critical analysis of the prompts and outputs
+
+
+---
+
+## 🧪 Highlights
+
+- **Child Prompt**: Used metaphor and storytelling to explain gradient descent as a blindfolded hiker going downhill.
+- **Student Prompt**: Blended intuitive reasoning with clean math examples, suitable for university beginners.
+- **Engineer Prompt**: Technical, structured explanation including equations, limitations, and comparison to Adam optimizer.
+
+---
+
+## 📌 Key Takeaways
+
+✅ Prompt quality is **not only about wording** — it’s about **audience framing, clarity, and constraints**  
+✅ Even with the same core idea, **well-structured prompts** lead to **diverse and appropriate outputs**  
+✅ Prompt engineering is an **iterative and testable skill** — it's about understanding *how* models think
+
