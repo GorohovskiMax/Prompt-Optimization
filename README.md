@@ -28,23 +28,6 @@ By varying the language, structure, and depth of the prompts, we observe how the
 
 ---
 
-## 📁 Project Structure
-
-prompt-gradient-descent-mini/
-├── README.md <- This file
-├── prompts/ <- The 3 prompts used (child, student, engineer)
-│ ├── child.txt
-│ ├── student.txt
-│ └── engineer.txt
-├── responses/ <- The generated responses from the model
-│ ├── child.md
-│ ├── student.md
-│ └── engineer.md
-└── evaluation.md <- Critical analysis of the prompts and outputs
-
-
----
-
 ## 🧪 Highlights
 
 - **Child Prompt**: Used metaphor and storytelling to explain gradient descent as a blindfolded hiker going downhill.
