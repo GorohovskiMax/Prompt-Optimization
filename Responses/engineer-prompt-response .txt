@@ -1,0 +1,63 @@
+Certainly! Here's an explanation tailored for a **software engineer with ML experience**, structured clearly into three parts as requested:
+
+---
+
+### ⚙️ How Gradient Descent Works
+
+Gradient descent is an **iterative optimization algorithm** used to minimize a loss function by updating parameters in the opposite direction of the gradient.
+At each iteration $t$, we update weights $\theta$ as:
+
+$$
+\theta_{t+1} = \theta_t - \alpha \cdot \nabla_\theta \mathcal{L}(\theta_t)
+$$
+
+where:
+
+* $\alpha$ is the **learning rate**
+* $\nabla_\theta \mathcal{L}$ is the gradient of the loss with respect to the parameters
+
+This process continues until convergence — ideally reaching a local (or global) minimum of the loss surface.
+
+---
+
+### 🧱 Limitations of Basic Gradient Descent
+
+1. **Sensitivity to Learning Rate**:
+
+   * Too large → divergence
+   * Too small → painfully slow convergence
+
+2. **Poor Conditioning / Saddle Points**:
+
+   * Gets stuck in flat regions or saddle points
+   * Struggles with very "bumpy" loss surfaces
+
+3. **No Adaptivity**:
+
+   * Applies the same learning rate across all parameters, regardless of curvature or gradient scale
+
+4. **Mini-batch Noisiness**:
+
+   * In stochastic or mini-batch settings, noisy gradients can make convergence unstable
+
+---
+
+### 🧠 When to Use Other Optimizers like Adam
+
+Adam (Adaptive Moment Estimation) extends SGD by maintaining moving averages of both the gradients and their squared values, which helps in the following ways:
+
+✅ **Adaptive Learning Rates** per parameter
+✅ **Faster convergence** on sparse or noisy gradients
+✅ **Works well out of the box** for many deep learning problems
+
+You might prefer **Adam over SGD** when:
+
+* Training **deep neural networks** (especially with many parameters)
+* Dealing with **sparse features** (e.g., in NLP)
+* You want **faster convergence** without much hyperparameter tuning
+
+However, Adam may generalize slightly worse than SGD in some cases, especially in computer vision — so some practitioners still prefer SGD with momentum when they can afford longer training.
+
+---
+
+Let me know if you'd like a diagram or a code example comparing updates in SGD vs Adam!

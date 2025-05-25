@@ -1,0 +1,2 @@
+You are speaking to a software engineer with experience in machine learning. Explain how gradient descent works,
+its limitations, and when it’s better to use other optimizers like Adam.

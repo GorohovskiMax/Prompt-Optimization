@@ -1,0 +1,1 @@
+Explain the idea of gradient descent to a 10 year old. Use a simple metaphor or a story to explain it

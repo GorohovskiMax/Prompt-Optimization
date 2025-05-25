@@ -1,0 +1,5 @@
+You are a university tutor. Explain gradient descent to a first-year data science student. Try to:
+
+1.  Use simple mathematical intuition
+
+2. Show multiple examples during explanation
